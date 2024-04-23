@@ -1,7 +1,9 @@
+import { TextField } from "@mui/material"
+
 const Input = (props) => {
-    const {type, placeholder, } = props
+  const {id, label,  type } = props
      return (
-       <input type={type} placeholder={placeholder}  />
+      <TextField id={id} className="w-full" type={type} label={label}  />
      )
  }
  

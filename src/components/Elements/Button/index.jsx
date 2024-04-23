@@ -1,10 +1,9 @@
-const Button = (props) => {
-   const {children, variant } = props
+import Button from '@mui/material/Button';
+const ButtonComponents = (props) => {
+   const {name, variant } = props
     return (
-     <button className={`btn ${variant}`}>
-        {children} 
-     </button>
+      <Button variant={variant}>{name}</Button>
     )
 }
 
-export default Button
+export default ButtonComponents

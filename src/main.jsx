@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import LoginPage from "./pages/login";
+import LoginPage from "./pages/Login";
 
 const router = createBrowserRouter([
   {
