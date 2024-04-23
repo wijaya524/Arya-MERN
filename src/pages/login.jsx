@@ -1,15 +1,7 @@
-import React from 'react'
-import Layouts from '../components/layouts/AuthLayouts'
-import Input from '../components/Elements/input/Input'
-import ButtonComponents from '../components/Elements/Button'
-
+import FormLogin from "../components/Elements/Fragments/FormLogin"
 const LoginPage = () => {
     return (
-       <Layouts title="Login">
-         <Input type="email" id="email" outline="true" label="Email"/>
-         <Input  type="password" id="password" outline="true"  label="Password" />
-         <ButtonComponents variant="contained" name="Login"/>
-       </Layouts>
+    <FormLogin/>    
     )
 }
 

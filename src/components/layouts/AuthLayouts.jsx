@@ -1,11 +1,16 @@
-const Layouts = (props) => {
-    const { children, title} = props
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import {  Container } from '@mui/system';
+const LayoutsDiv = (props) => {
+    const { children} = props
     return (
-        <div className="w-full max-w-7xl bg-slate-700 m-auto grid justify-center items-center">
-            <h1 className="text-center text-lg">{title}</h1>
-            {children}
-        </div>
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="sm">
+        {children}
+      </Container>
+    </React.Fragment>
     )
 }
 
-export default Layouts
+export default LayoutsDiv
