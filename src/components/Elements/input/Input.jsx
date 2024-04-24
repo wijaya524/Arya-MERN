@@ -3,7 +3,7 @@ import { TextField } from "@mui/material"
 const Input = (props) => {
   const {id, label,  type,  } = props
      return (
-      <TextField id={id}  autoComplete="off" InputLabelProps={{style: {color: 'white'}}}  inputProps={{ style: {color: 'white'},maxLength: 8}}  type={type} label={label}  />
+      <TextField fullWidth id={id}  autoComplete="off" InputLabelProps={{style: {color: 'white'}}}  inputProps={{ style: {color: 'white', width: '250px' },maxLength: 8}}  type={type} label={label}  />
      )
  }
  

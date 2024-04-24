@@ -5,9 +5,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import LoginPage from './pages/Login';
+import LoginPage from './pages/login';
+import RegisterPage from './pages/Registration';
 import FormLogin from './components/Elements/Fragments/FormLogin';
-import FormRegister from './components/Elements/Fragments/FormRegister';
 import ErrorPage from './pages/Nfd404';
 
 const router = createBrowserRouter([
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/register",
-    element: <FormRegister/>,
+    element: <RegisterPage/>,
   },
 ]);
 

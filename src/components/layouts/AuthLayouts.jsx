@@ -1,15 +1,11 @@
-import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import {  Container } from '@mui/system';
+
+
 const LayoutsDiv = (props) => {
     const { children} = props
     return (
-    <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="sm">
+       <div className=" w-full  items-center justify-center grid h-screen">
         {children}
-      </Container>
-    </React.Fragment>
+       </div>
     )
 }
 
