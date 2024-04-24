@@ -9,11 +9,12 @@ import LoginPage from './pages/login';
 import RegisterPage from './pages/Registration';
 import FormLogin from './components/Elements/Fragments/FormLogin';
 import ErrorPage from './pages/Nfd404';
+import LandingPage from './pages/Landing';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LoginPage/>,
+    element: <LandingPage/>,
     errorElement: <ErrorPage/>,
   },
   {
