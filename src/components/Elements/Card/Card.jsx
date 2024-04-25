@@ -1,32 +1,19 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import ButtonComponents from "../Button";
 
-export default function MediaCard() {
+export default function MediaCard(props) {
+  const { harga } = props;
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <div className="max-w-sm p-4 bg-white rounded-lg border text-white border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <img src=" burger.jpg" alt=""  />
+      <h1 className="font-bold mb-3 mt-3">haha</h1>
+      <p className="mb-4 text-xs">
+        Lorem ipsum dolor sit, amet consectetur
+      </p>
+      <div className="flex justify-between">
+        <ButtonComponents  variant="contained" name="Buy" />
+        <h1 className="font-bold  text-sm "> {harga} </h1>
+      </div>
+    </div>
   );
 }

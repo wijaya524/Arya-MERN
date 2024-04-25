@@ -1,7 +1,13 @@
-import MiniDrawer from "./Navbar";
+import ResponsiveAppBar from "./Navbar";
+
+
 
 const LandingPage = () => {
-  return <MiniDrawer />;
+  return (
+
+    <ResponsiveAppBar />
+
+  )
 };
 
 export default LandingPage;
